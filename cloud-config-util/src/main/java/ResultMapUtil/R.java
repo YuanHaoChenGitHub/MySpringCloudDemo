@@ -67,6 +67,7 @@ public class R implements Serializable{
         this.data = data;
     }
 
+
     public static R ok(String msg) {
         return new R(msg);
     }
@@ -98,6 +99,9 @@ public class R implements Serializable{
         return new R(code, msg);
     }
 
+
+    public R() {
+    }
 
     private R(Object data) {
         this.code = ResultEnum.SUCCESS.getCode();

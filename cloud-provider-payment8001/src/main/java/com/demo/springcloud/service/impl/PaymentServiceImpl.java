@@ -1,6 +1,6 @@
 package com.demo.springcloud.service.impl;
 
-import com.demo.springcloud.entity.Payment;
+import DTO.Payment;
 import com.demo.springcloud.dao.PaymentDao;
 import com.demo.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.demo.springcloud.service;
 
-import com.demo.springcloud.entity.Payment;
+import DTO.Payment;
 import java.util.List;
 
 /**

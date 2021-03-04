@@ -2,10 +2,9 @@ package
 
 com.demo.springcloud.dao;
 
-import com.demo.springcloud.entity.Payment;
+import DTO.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

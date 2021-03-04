@@ -1,10 +1,9 @@
 package com.demo.springcloud.controller;
 
 import ResultMapUtil.R;
-import com.demo.springcloud.entity.Payment;
+import DTO.Payment;
 import com.demo.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -34,8 +33,15 @@ public class PaymentController {
      */
     @GetMapping("/selectOne/{id}")
     public R selectOne(@PathVariable("id")  Long id) {
-
+        System.out.println("hahha");
         return R.ok(paymentService.queryById(id));
+    }
+
+    @PostMapping("/create")
+    public R create(Payment payment){
+        System.out.println("create-----");
+        System.out.println(payment.getSerialNo());
+            return R.ok(paymentService.insert(payment));
     }
 
 }

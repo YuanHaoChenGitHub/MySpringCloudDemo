@@ -1,4 +1,4 @@
-package com.demo.springcloud.entity;
+package DTO;
 
 import java.io.Serializable;
 
